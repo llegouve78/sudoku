@@ -1,0 +1,21 @@
+name: 'Sudoku Action'
+description: 'Action de resolution de sudoku'
+aithour: 'llg'
+
+
+inputs:
+  who-to-greed: 
+    description: Tableau
+
+jobs:
+  sudoku-action:
+    runs-on: thinkpad
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Run Custom Python Action
+        uses: llegouve78/sudoku-repo@v1
+        with:
+          name: 'GHSudoku'
