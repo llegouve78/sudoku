@@ -22,7 +22,7 @@ jobs:
       - name: Allow PowerShell Script Execution
         run: |
           Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-        shell: pwsh
+        shell: powershell
 
       - name: Set up Python
         uses: actions/setup-python@v4
