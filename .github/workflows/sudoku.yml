@@ -26,6 +26,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # Facultatif si vous avez un fichier requirements.txt
 
