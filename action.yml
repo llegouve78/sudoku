@@ -1,6 +1,6 @@
 name: 'Sudoku Action'
 description: 'Action de resolution de sudoku'
-aithour: 'llg'
+authour: 'llg'
 
 
 inputs:

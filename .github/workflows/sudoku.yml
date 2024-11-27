@@ -3,10 +3,12 @@ name: Run Python Script
 on:
   workflow_dispatch:
     inputs:
-      which-url:
-        description: "Tableau a resoudre" 
+      sudoku:
+        description: "Suite de chiffre du tableau a resoudre" 
         type: string
         required: true
+
+ 
 
           
 jobs:
@@ -29,3 +31,5 @@ jobs:
 
       - name: Run Python Script
         run: ./main.py
+        env:
+          MY_SUDOKU: ${{ github.event.inputs.sudoku}}

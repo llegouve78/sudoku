@@ -1,15 +1,6 @@
 import os
-import nympy as py
-
-def main():
-    name = os.getenv('INPUT_NAME', 'World')
-    greeting = f"Hello, {name}"
-    with open(os.getenv('GITHUB_OUTPUT'), 'a') as output_file:
-        output_file.write(f"greeting={greeting}\n")
-        
-if __main__== "__main__":
-    main()
-                          
+import numpy as np
+import ast
 
 def est_valide(matrice, i, j, k):
     bloc_x, bloc_y = 3 * (i // 3), 3 * (j // 3)
@@ -33,4 +24,25 @@ def resoudre_sudoku(matrice):
                 return False  # Aucune solution possible pour cette case
     return True  
 
-resoudre_sudoku(matrice)
+
+def main():
+    name = os.getenv('MY_SUDOKU', '000')
+    
+    result = [[int(char) for char in string[i:i+9]] for i in range(0, len(string), 9)]
+    
+    list_array = ast.literal_eval(result)
+    
+    matrice = np.array(list_array)
+    greeting = f"Source, \n{matrice}"
+    print(greeting)
+    
+    resoudre_sudoku(matrice)
+    
+    greeting = f"Resultat, \n{matrice}"
+    print(greeting)
+    
+
+        
+if __name__ == "__main__":
+    main()                          
+
