@@ -28,7 +28,7 @@ def resoudre_sudoku(matrice):
 def main():
     name = os.getenv('MY_SUDOKU', '000')
     
-    result = [[int(char) for char in name[i:i+9]] for i in range(0, len(name), 9)]
+    result = [[int(char) for char in name[i:i+9]] for i in range(0, len(name) - 1, 9)]
     
     list_array = ast.literal_eval(result)
     
