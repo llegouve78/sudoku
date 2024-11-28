@@ -43,7 +43,7 @@ def main():
     resoudre_sudoku(matrice)
 
     
-    print(f"MY_OUTPUT={str(matrice).replace("'","").replace("[","").replace("]","").replace("\n","")}\n")
+    print(f"MY_OUTPUT={str(matrice).replace("'","").replace("[","").replace("\n","").replace(" ","").replace("]"," ")}\n")
     #print(greeting)
     
 
