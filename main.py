@@ -36,12 +36,12 @@ def main():
     # list_array = ast.literal_eval(result)
     
     matrice = np.array(result)
-    greeting = f"Source, \n{matrice}"
+    #greeting = f"Source, \n{matrice}"
     #print(greeting)
     
     resoudre_sudoku(matrice)
     
-    greeting = f"Resultat, \n{matrice}"
+    greeting = f"MY_OUTPUT={matrice}"
     print(greeting)
     
 
