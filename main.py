@@ -26,7 +26,7 @@ def resoudre_sudoku(matrice):
 
 
 def main():
-    name = os.getenv('MY_SUDOKU', '000')
+    name = os.getenv('MY_SUDOKU', '000').replace(" ","")
     print(f"MY_IN={name}\n")
     
     result = [[int(char) for char in name[i:i+9]] for i in range(0, len(name) - 1, 9)]
