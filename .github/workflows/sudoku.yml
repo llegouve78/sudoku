@@ -33,10 +33,9 @@ jobs:
          
       - name: Run Python Script
         run: |
-          export GITHUB_OUTPUT=$(cygpath -u $GITHUB_OUTPUT)
-          python main.py >> $GITHUB_OUTPUT
+          python main.py >> $env:GITHUB_OUTPUT
         id: result
-        shell: bash
+        shell: powershell
         env:
           MY_SUDOKU: ${{ github.event.inputs.sudoku}}
 
