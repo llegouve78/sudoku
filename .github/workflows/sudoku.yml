@@ -33,7 +33,7 @@ jobs:
          
       - name: Run Python Script
         run: |
-          python ./main.py >> $GITHUB_OUTPUT
+          python main.py >> $GITHUB_OUTPUT
         id: result
         shell: bash
         env:
