@@ -32,6 +32,11 @@ jobs:
         shell: powershell
          
       - name: Run Python Script
-        run: python ./main.py
+        run: python ./main.py >> $GITHUB_OUTPUT
+        id: result
         env:
           MY_SUDOKU: ${{ github.event.inputs.sudoku}}
+
+      - name: Print output
+        id: output
+        run: echo "${{steps.result.outputs.MY_OUTPUT}}"
