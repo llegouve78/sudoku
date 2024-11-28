@@ -31,8 +31,8 @@ def main():
     
     result = [[int(char) for char in name[i:i+9]] for i in range(0, len(name) - 1, 9)]
 
-    list_array = ast.literal_eval(result)
-    print(f"MY_RES={list_array}\n")
+    #list_array = ast.literal_eval(result)
+    #print(f"MY_RES={list_array}\n")
     
   
     
@@ -42,7 +42,7 @@ def main():
     
     #resoudre_sudoku(matrice)
     
-    print(f"MY_OUTPUT={ast.literal_eval(matrice)}\n")
+    print(f"MY_OUTPUT={str(matrice)}\n")
     #print(greeting)
     
 
