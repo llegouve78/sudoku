@@ -42,7 +42,7 @@ def main():
     
     #resoudre_sudoku(matrice)
     
-    print(f"MY_OUTPUT={str(matrice)}\n")
+    print(f"MY_OUTPUT={'o'.join(map(str, sum(matrice, [])))}\n")
     #print(greeting)
     
 
