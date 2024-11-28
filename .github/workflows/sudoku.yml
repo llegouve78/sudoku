@@ -33,11 +33,12 @@ jobs:
          
       - name: Run Python Script
         run: |
-          python ./main.py > tempi.txt
-          cat tempi.txt >> $GITHUB_OUTPUT
+          $output = python ./main.py 
+          echo "$output" >> $env:GITHUB_OUTPUT
         id: result
         env:
           MY_SUDOKU: ${{ github.event.inputs.sudoku}}
+          MY_OUTPUT: ${{ github.event.outputs.MY_OUTPUT}}
 
       - name: Print output
         id: output
