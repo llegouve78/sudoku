@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       sudoku:
-        description: "Suite de chiffre du tableau a resoudre" 
+        description: "Suite de chiffres du tableau a resoudre" 
         type: string
         required: true
 
