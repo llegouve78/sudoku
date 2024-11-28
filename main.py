@@ -40,7 +40,7 @@ def main():
     #greeting = f"Source, \n{matrice}"
     #print(greeting)
     
-    #resoudre_sudoku(matrice)
+    resoudre_sudoku(matrice)
 
     
     print(f"MY_OUTPUT={str(matrice).replace("'","").replace("[","").replace("]","").replace("\n","")}\n")
