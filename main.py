@@ -39,7 +39,7 @@ def main():
     #greeting = f"Source, \n{matrice}"
     #print(greeting)
     
-    resoudre_sudoku(matrice)
+    #resoudre_sudoku(matrice)
     
     greeting = f"MY_OUTPUT={matrice}"
     print(greeting)
