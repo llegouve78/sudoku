@@ -9,7 +9,7 @@ inputs:
 
 jobs:
   sudoku-action:
-    runs-on: thinkpad
+    runs-on: windows-latest
 
     steps:
       - name: Checkout Repository
